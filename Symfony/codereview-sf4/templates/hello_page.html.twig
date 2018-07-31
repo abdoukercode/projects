@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+
+
+{#
+Hello , {{ app.request.query.get('name') | default('Codereview syf4')}}
+#}
+
+    My lovely variable: {{ some_variable | default('variable not set yet')}} <br/>
+
+    I'm {{ name }}
+{% endblock %}

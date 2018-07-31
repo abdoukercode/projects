@@ -1,0 +1,11 @@
+{%  extends '::base.html.twig' %}
+
+
+{% block body %}
+<p>{{ 'Symfony is great' | trans }}</p>
+    <p>{%  trans %}Symfony is great{% endtrans %}</p>
+
+
+    {{ source('@Main/Default/index.html.twig') }}
+{% endblock %}
+

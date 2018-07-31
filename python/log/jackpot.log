@@ -1,0 +1,9 @@
+INFO 2018-04-13 20:39:05,220 - info logging message
+DEBUG 2018-04-13 20:39:05,221 - deb logging message
+ERROR 2018-04-13 20:39:05,221 - error logging message
+CRITICAL 2018-04-13 20:39:05,221 - critical logging message
+WARNING 2018-04-13 20:39:05,221 - warning logging message
+INFO 2018-04-13 20:39:05,221 - quadratic_formula(1, 0,-4)
+DEBUG 2018-04-13 20:39:05,221 - # compute the determinant
+DEBUG 2018-04-13 20:39:05,221 - # compute the 2 roots
+DEBUG 2018-04-13 20:39:05,221 - # Return the roots

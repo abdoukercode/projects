@@ -1,0 +1,27 @@
+include layout
+    block appContent
+      h1 Some people
+      ul  
+        each person,i in people
+          li= 'number:' + i +'-' + person.name 
+      
+      p.
+        paragraph one
+
+        paragraph two
+      
+      ul  
+        li#item item1
+        li#item item2
+        li#item item3
+
+      h2 my Web application
+      - let user = { name:"dominic", loggedIn: true, lastLogin:6 }
+      if user.loggedIn  
+        p 
+          | Welcome back,
+          strong #{ user.name}
+
+      else  
+        p
+          You must be loggedIn

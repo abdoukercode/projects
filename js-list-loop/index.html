@@ -1,0 +1,89 @@
+<html>
+	<head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"><p></p>
+	</head>
+	<body>
+		<div id="myList" style="margin: 0 auto; max-width: 50%;"></div>
+		<script type="text/javascript">
+		var users = [
+{
+"id": 1,
+"firstname": "John",
+"lastname": "Snow",
+"email": "johnsnow@knowsnothing.com",
+"quote": "Winter is coming !"
+},
+{
+"id": 2,
+"firstname": "John",
+"lastname": "Rambo",
+"email": "notmywar@vietnam.com",
+"quote": "In town you're the law, out here it's me !!"
+},
+{
+"id": 3,
+"firstname": "Georges",
+"lastname": "Abitbol",
+"email": "leplusclasse@dumonde.fr",
+"quote": "Monde de merde !"
+},
+{
+"id": 4,
+"firstname": "Karadoc",
+"lastname": "De Vannes",
+"email": "cestpasfaux@pascompris.fr",
+"quote": "Le gras, c'est la vie."
+},
+{
+"id": 5,
+"firstname": "Jessica",
+"lastname": "Hyde",
+"email": "utopia@experiment.uk",
+"quote": "Who is Mr Rabbit ?"
+},
+{
+"id": 6,
+"firstname": "Jessica",
+"lastname": "Rabbit",
+"email": "hemakesmelaugh@roger.com",
+"quote": "I'm not bad, I'm just drawn that way !"
+}
+];
+		var ul = document.createElement('ul');
+        ul.classList.add("collection");
+    
+		document.getElementById('myList').appendChild(ul);
+ 
+		users.forEach(function(user){
+			var li = document.createElement('li');
+            li.classList.add("collection-item");
+			ul.appendChild(li);
+			li.innerHTML += `${user.id} - ${user.firstname} ${user.lastname} - ${user.email} `
+
+		});
+		</script>
+	</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to create a Text Field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+var y ="azert"
+function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "text");
+    x.setAttribute("value", y);
+    document.body.appendChild(x);
+}
+</script>
+
+</body>
+</html>
+ -->

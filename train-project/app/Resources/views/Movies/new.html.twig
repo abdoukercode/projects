@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block title %}AppBundle:Movies:New{% endblock %}
+
+{% block body %}
+<h1>New Samuel L jackson page</h1>
+    {{ quote }}
+{{ include('Movies/_form..html.twig') }}
+    Today is {{  'now'| date('Y m d') }}
+{% endblock %}

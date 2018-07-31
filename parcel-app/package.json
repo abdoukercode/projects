@@ -1,0 +1,17 @@
+{
+  "name": "parcel-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "auto-prefixer": "^0.4.2",
+    "axios": "^0.17.1",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,18 @@
+include layout
+    block appContent
+
+      h1#person Favorite color
+      p.person-class Favorite color is #{color}
+      .display-box
+      #myId
+      input(type="password" placeholder=">-Enter Name-<" data-js=`${5>2? "ok":"not ok"}`)
+      
+      - const myClasses = ["class1","class2","class3"]
+      
+      div(class=myClasses)
+
+      -const myStyles = {"color":"red", "background-color": "blue"}
+      div(style=myStyles) styles div
+
+      - const imgattr= {"src":"./img/download.png", "alt":"nodejs"}
+      img&attributes(imgattr)

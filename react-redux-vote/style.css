@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Kristi|La+Belle+Aurore');
+
+body {
+    background-color:plum;
+}
+
+.container {
+    margin-top: 50px;
+}
+.card {
+    padding-bottom: 20px;
+}
+
+/* .card-header{
+    background-color: aqua !important;
+} */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-item{
+    margin-top: 50px
+}
+
+.grid-item img {
+    height: 120px;
+}
+
+.progress{
+    margin-top: 30px;
+}
+
+.vote-desc h1 {
+    font-family: 'Kristi', cursive;
+}
+
+.vote-desc h4 {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.card-body {
+    background-color: darksalmon;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+       
+        grid-template-columns: 1fr;
+    }
+
+    
+}

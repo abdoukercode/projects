@@ -1,0 +1,105 @@
+{
+    "editor.fontSize": 22,
+      "editor.fontFamily": "'Operator Mono Light'",
+      "editor.fontLigatures": true,
+      "window.zoomLevel": 2,
+      "files.autoSave": "afterDelay",
+       "terminal.integrated.fontFamily":  "'Operator Mono Light'",
+      "terminal.integrated.fontSize": 22,
+      "editor.minimap.enabled": false,
+  
+      "files.insertFinalNewline": true,
+      "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.includeLanguages": {
+          "vue-html": "html",
+          "vue": "html",
+          "blade": "html",
+          "javascript": "javascriptreact"
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.iconTheme": "material-icon-theme",
+    // Upper size limit, in KB, that will count a package as a small package
+    "importCost.smallPackageSize": 50,
+  
+    // Upper size limit, in KB, that will count a package as a medium package
+    "importCost.mediumPackageSize": 100,
+  
+    // Decoration color for small packages
+    "importCost.smallPackageColor": "#7cc36e",
+  
+    // Decoration color for medium packages
+    "importCost.mediumPackageColor": "#7cc36e",
+  
+    // Decoration color for large packages
+    "importCost.largePackageColor": "#d44e40",
+  
+    // File extensions to be parsed by the Typescript parser
+    "importCost.typescriptExtensions": [
+      "\\.tsx?$"
+    ],
+  
+    // File extensions to be parsed by the Javascript parser
+    "importCost.javascriptExtensions": [
+      "\\.jsx?$"
+    ],
+  
+    // Which bundle size to display
+    "importCost.bundleSizeDecoration": "both",
+  
+    // Display the 'calculating' decoration
+    "importCost.showCalculatingDecoration": true,
+    "workbench.colorTheme": "Cobalt2",
+    "javascript.validate.enable": false,
+    "vscode_custom_css.policy": true,
+    "explorer.decorations.colors": true,
+    "terminal.integrated.fontWeightBold": "100",
+    "editor.fontWeight": "normal",
+    "editor.snippetSuggestions": "top",
+    "javascript.format.enable": true,
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+    "editor.formatOnSave": true,
+  // Enable per-language
+    "[javascript]": {
+      "editor.formatOnSave": true
+  },
+  "window.zoomLevel": 0,
+  "vsicons.projectDetection.autoReload": true,
+  "cSpell.userWords": [
+    "datasets",
+    "dispatchable"
+  ],
+  "php.suggest.basic": false,
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.overrideCopy": true,
+  "vim.hlsearch": true,
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+    "before": [" "],
+    "after": [
+      "leader",
+      "leader",
+      "leader",
+      "b",
+      "d",
+      "w",]
+    }
+    ],
+    "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf;",
+    "vim.foldfix": true,
+    "python.pythonPath": "/home/abdou/.local/bin/pylint",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.editor.tabCloseButton": "left",
+    "vscode_custom_css.imports": ["/home/abdou/.vscodestyles.css"],
+    "editor.renderWhitespace": "all",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#0a3d62"
+  }
+  }
+  
+  

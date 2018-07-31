@@ -1,0 +1,25 @@
+<input type="text" ng-model="query">
+
+{{query}}
+
+<select ng-model="order">
+    <option value="username">sort by name</option>
+    <option value="content">sort by contents</option>
+</select>
+<h1>{{title}}</h1>
+<div ng-repeat= "comment in comments | filter:{content:query} | orderBy:order">
+    <p>
+        <strong>{{comment.username}}</strong><br>
+            {{comment.content}}
+    </p>
+
+</div>
+
+  
+<form ng-submit="addComment();">
+    <input type="text" placeholder="username" ng-model="newComment.username"><br>
+    <input type="text" placeholder="city" ng-model="newComment.city"><br>
+    <input type="text" placeholder="email" ng-model="newComment.email"><br>
+    <textarea name="" id="" cols="30" rows="10" ng-model="newComment.content"></textarea><br>
+    <input type="submit" value="Envoyer"><br>
+</form>

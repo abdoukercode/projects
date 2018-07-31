@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app1" ng-init="person = {fName: 'Derek', lName: 'Banas'};
+capitals = [{city: 'Montgomery', state: 'Alabama'}, {city: 'Juneau', state: 'Alaska'}, {city: 'Phoenix', state: 'Arizona'}]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+</head>
+<body>
+  
+  
+<div ng-controller="cntrl1">
+    <span>Values:</span><br/>
+    <input type="text" ng-model="first"><br/><br>
+    <input type="text" ng-model="second"><br/><br>
+    <button ng-click="updateValue()">Add</button>
+    <br><br>
+        {{ calculation }}
+
+<p> the second value is <span ng-bind="second"></span></p>
+<ul>
+    <li ng-repeat="capital in capitals" style="list-style-type: none">
+        {{ 'City :' + capital.city + ' , State: ' + capital.state}}
+    </li>
+</ul>        
+</div>
+ <h2 ng-controller="cntrl2">{{ value}}</h2>
+ <hr><br><br>
+ <div ng-controller="feelings">
+    <h1 style="border:2px solid red"> {{ sad }}</h1>
+    <h1  style="border:2px solid green"> {{ happy }}</h1>
+    <label>Type a Number(1 to 4)
+        <input type="text" ng-model="selection">
+    </label>
+    <div ng-switch="selection">
+        <p ng-switch-when="1">You entered 1</p>
+        <p ng-switch-when="2">You entered 2</p>
+        <p ng-switch-when="3">You entered 3</p>
+        <p ng-switch-when="4">You entered 4</p>
+        <p ng-switch-default="4">Ooops , number not in the range</p>
+    </div>
+
+ </div>
+
+
+    <script src="./app.js">
+        
+    </script>
+</body>
+</html>

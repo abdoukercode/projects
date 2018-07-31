@@ -1,0 +1,31 @@
+@import './variables.css';
+
+h1 {
+  font-size: 22px;
+  line-height: 28px;
+  margin: 14px 0;
+  color: var(--black-two);
+}
+
+p {
+  font-size: 14px;
+  color: var(--black-four);
+  margin: 8px 0;
+}
+
+small {
+  font-size: 12px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--dark-sky-blue-two);
+  transition: all 200ms ease;
+}
+
+a:visited:hover {
+    color: var(--dark-sky-blue-three);
+  }
+

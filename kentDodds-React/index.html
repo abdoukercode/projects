@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>React Playground</title>
+
+
+    <body>
+        <div id="root"></div>
+
+
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+        <script type="text/babel">
+
+
+ class StopWatch extends React.Component {
+     state = {
+         lapse:0,
+         running: false
+     }
+
+     handleClick = () => {
+            //alert("u clicked")
+            const startTimer= Date.now() - this.state.lapse;
+            setInterval(() => {
+                this.setState({
+                lapse :Date.now() - startTimer,
+            })
+
+            this.setState({
+                running:true
+            })
+            } )
+
+     }
+
+     handleClear = () => {
+
+        this.setState({
+                lapse :0,
+                running: false
+            })
+     }
+    render() {
+     const {lapse, running} = this.state;
+        
+        const buttonStyles = { 
+                    border: '1px solid #cc',
+                     background: '#fff', 
+                     fontSize: "2em", 
+                     padding: 15,
+                    margin: 5,
+                    width: 200 } 
+    return (
+        <div style={{textAlign: 'center'}}>
+            <label style={{fontSize: '5em', display: 'block'}}>{lapse}ms</label>
+            <button style={buttonStyles} onClick={this.handleClick}>{running?'Stop':'Start'}</button>
+            <button style={buttonStyles} onClick={this.handleClear}>Clear</button>
+        </div>
+                            
+    )
+    }
+
+}
+    
+            ReactDOM.render(<StopWatch/>,document.getElementById('root'));
+
+        </script>
+    </body>
+
+</html>

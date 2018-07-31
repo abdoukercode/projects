@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    title Docker-node
+
+  body
+    h1 Docker Pug - node template engine
+    #container.col
+      if youAreUsingPug
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Pug is a terse and simple templating language with a
+        strong focus on performance and powerful features.
+    
+    h3 List of users
+    ul  
+        each user in users
+         div(class="card col-md-4 col-md-offset-4")
+            div(class="card-header")
+                 p user
+            div(class="card-body")
+            h5   #{user.name} 
+            p(class="card-text") contact me whenever you want at :  #{user.phone} 
+            a(class="btn btn-primary", href='#')  #{user.email} 
+         br
+                            
+

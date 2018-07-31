@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+
+        }
+
+        body {
+            /* The image used */
+            background-image: url("back.jpg");
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+             form{
+                display: block;
+                margin: 50% auto;
+
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form  method ="post" class="col-md-4 text-center">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+            </div>
+            <button type="submit" class="btn btn-sm btn-outline-info btn-info" id="submit"><span class="badge badge-pill badge-info"> save 👍</span>   </button>
+            <p id="error" style="color:red ; font-size: 25px; background: white" class="mt-2"></p>
+        
+        </form>
+    </div>
+ <script>
+             
+     
+        const name = document.querySelector('form');
+        const input =document.getElementById('name');
+        input.addEventListener('mouseenter', ()=>{
+            console.log("enterer");
+         document.getElementById('error').textContent = " ";
+            
+        })
+     name.addEventListener('submit', e => {
+         e.preventDefault();
+         const currentU =e.target[0].value;
+         if(currentU.length > 3){
+         document.getElementById('error').textContent = " ";
+             
+             localStorage.setItem("currentUser" ,currentU);
+             window.location.href = 'http://127.0.0.1:3000/snake.html';
+             
+         }else{
+            document.getElementById('error').textContent = " Please enter valide name !!"
+             
+         }
+         
+           
+     });
+
+     
+
+ </script>
+</body>
+
+</html>

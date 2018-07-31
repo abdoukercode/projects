@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <label for="input">Enter URL:</label>
+        <input type="text" class="form-control" id="input" type="text" value="https://www.youtube.com/watch?v=U_Z5FJbygJc">
+        <button class="btn btn-secondary" id="button"> Parse the URL</button>
+
+        <dl class="row" id="result">
+            <dt class="col-3">Protocol: <dd class="col-9" id="protocol"></dd></dt>
+            <dt class="col-3">Domain: <dd class="col-9" id="domain"></dd></dt>
+            <dt class="col-3">Path: <dd class="col-9" id="path"></dd></dt>
+            <dt class="col-3">Search: <dd class="col-9" id="search"></dd></dt>
+        </dl>
+    </div>
+    
+        
+ <script src="./index.js"></script>
+</body>
+</html>

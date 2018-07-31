@@ -1,0 +1,17 @@
+{
+  "name": "pwa-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs": "^2.3.5",
+    "workbox-sw": "^3.0.1"
+  },
+  "devDependencies": {}
+}

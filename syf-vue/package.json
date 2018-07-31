@@ -1,0 +1,15 @@
+{
+    "devDependencies": {
+        "vue": "^2.5.16",
+        "vue-loader": "^15.2.6",
+        "vue-template-compiler": "^2.5.16"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production"
+    }
+}

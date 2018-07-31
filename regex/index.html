@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <h1>View Basic</h1>
+    <div id="app">
+        <h2>{{ name }}</h2>
+        <a v-bind:href ='url'>Youtube</a>
+        <p>I earn {{ wage }} € per hour</p>
+        <button v-on:click="wage++" class="btn">
+            Increase wage by € 1
+        </button>
+                
+    </div>
+<!-- <script src="./regEx.js"></script> -->
+<script src="./app.js">
+</script>
+</body>
+</html>
